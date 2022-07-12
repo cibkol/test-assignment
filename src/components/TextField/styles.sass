@@ -1,0 +1,39 @@
+@import "../../assets/sass/vars"
+
+.text-field
+    position: relative
+    width: 100%
+
+    &__input
+        width: 100%
+        color: $color-input__value
+        border: 1px solid $color-input__border
+        outline: none
+        padding: 10px 12px
+        border-radius: 2px
+        font-family: 'NotoSans'
+        font-size: 14px
+        line-height: 20px
+
+        &:hover
+            border-color: $color-input__border_hover
+
+        &:focus-visible
+            border-color: $color-input__border_focused
+
+    &__placeholder
+        position: absolute
+        top: 12px
+        left: 12px
+        text-transform: uppercase
+        color: $color-input__placeholder
+        font-size: 14px
+        line-height: 20px
+        font-family: 'NotoSans'
+
+        &_value_not_empty
+            padding: 0 6px
+            background-color: $white
+            top: -5px
+            font-size: 10px
+            line-height: 12px
